@@ -1,0 +1,21 @@
+{
+  "name":"MarqueeLottery",
+  "version":"0.1.0",
+  "title":"jQuery MarqueeLottery",
+  "keywords":[
+    "marquee",
+    "lottery"
+  ],
+  "author":{
+    "name":"Liu Ze Xin",
+    "email":"liuzexin_top@163.com",
+    "url":"http://blog.liuzexin.top/"
+  },
+  "licenses":{
+    "type":"MIT",
+    "url":"https://github.com/liuzexin/MarqueeLottery/blob/master/LICENCE"
+  },
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}
