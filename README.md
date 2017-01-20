@@ -55,14 +55,23 @@ First of all,you should know that speed mode only support  one, which `ease-in-e
 ### Configuration ###
 
 `ele`:The jQuery selector of gift image，its order according to you need order.If you want let second image at the begin of running, you should put it in first index of ele.
+
 `maxTime`:The max time of the gift image switch.
+
 `minTime`:The min time of the gift image switch.
+
 `desIndex`:This param should resolve from server, the gift image stop at `desIndex` position.
+
 `roundTotal`:Number of circles for running.In fact, circles is `roundTotal + 1`.The last of circle will select the `desIndex`.
+
 `finishCallback`:This callback is called at the end of running.
+
 `delay`:Delay the given time to call the `finishCallback`. 
+
 `activeClass`:When pass the every gift image add the `activeClass` class. 
+
 `reduceTimeStep`:The time reduce in the speed up.
+
 `addTimeStep`:The time add in the slow down.
 
 `$('#id').marquee('start');` Start marquee right now.
