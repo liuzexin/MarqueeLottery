@@ -1,0 +1,25 @@
+{
+  "name": "marquee-lottery",
+  "version": "0.1.2",
+  "description": "marquee-lottery is a jQuery Plugin.For conviently creating lottery activiry.",
+  "main": "jquery-plugin.marquee-lettory.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuzexin/MarqueeLottery.git"
+  },
+  "keywords": [
+    "ecosystem:jquery",
+    "jquery-plugin",
+    "marquee",
+    "lottery"
+  ],
+  "author": "CoderLiu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuzexin/MarqueeLottery/issues"
+  },
+  "homepage": "https://github.com/liuzexin/MarqueeLottery#readme"
+}
