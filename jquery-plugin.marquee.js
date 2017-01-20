@@ -30,13 +30,16 @@
                 $.error('Marquee \'minTime\' error : more than \'totalTime\' or equal 0.');
                 return $this;
             }else if(settings.addTimeStep <= 0 || settings.addTimeStep > settings.totalTime){
-                $.error('Marquee \'addTimeStep\' error : less than 0 or equal 0.');
+                $.error('Marquee \'addTimeStep\' error : less than 0 or equal 0 more than \`totalTime\`.');
                 return $this;
             }else if(settings.reduceTimeStep <= 0 || settings.reduceTimeStep > settings.totalTime){
-                $.error('Marquee \'reduceTimeStep\' error : less than 0 or equal 0.');
+                $.error('Marquee \'reduceTimeStep\' error : less than 0 or equal 0 or more than \`totalTime\`.');
                 return $this;
             }else if(settings.roundTotal <= 0){
                 $.error('Marquee \'roundTotal\' error : less than 0 or equal 0.');
+                return $this;
+            } else if(settings.ele.length <= 1){
+                $.error('Marquee \'ele.length\' error : less than 1.');
                 return $this;
             }
             $this.data('marquee', settings);
@@ -49,6 +52,10 @@
                 roundTotal=settings.roundTotal,delayTime=settings.delayTime,
                 minTime=settings.minTime,reduceStepTime=settings.reduceTimeStep,addTimeStep=settings.addTimeStep,
                 totalTime=settings.totalTime,currentTime=totalTime;
+            //Fix the bug of the secondary of start, the `desIndex` is the active class.
+            $(sArr[desIndex]).removeClass(settings.activeClass);
+            //At the begin of start, should add class for the first element of `sArr`.
+            $(sArr[0]).addClass(settings.activeClass);
             function callback() {
                 if (currentIndex > sArrCount - 1) {
                     currentIndex = 0;
