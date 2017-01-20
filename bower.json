@@ -1,7 +1,7 @@
 {
   "name": "marquee-lottery",
   "description": "marquee-lottery is a jQuery Plugin.For conviently creating lottery activiry.",
-  "main": "jquery-plugin.marquee-lettory.js",
+  "main": "jquery-plugin.marquee-lottery.js",
   "authors": [
     "CoderLiu"
   ],
