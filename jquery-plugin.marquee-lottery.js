@@ -60,9 +60,9 @@
                 if (currentIndex > sArrCount - 1) {
                     currentIndex = 0;
                 }
-                $(sArr[currentIndex]).addClass(settings.activeClass);
+                $(sArr[currentIndex]).toggleClass(settings.activeClass);
                 var beforeIndex = currentIndex - 1 < 0 ? sArrCount - 1 : currentIndex - 1;
-                $(sArr[beforeIndex]).removeClass(settings.activeClass);
+                $(sArr[beforeIndex]).toggleClass(settings.activeClass);
                 currentIndex++;
 
                 if (currentIndex == sArrCount) {
