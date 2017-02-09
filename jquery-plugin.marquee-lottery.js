@@ -60,7 +60,6 @@
                 if (currentIndex > sArrCount - 1) {
                     currentIndex = 0;
                 }
-                $this.trigger('start-marquee-animation');
                 $(sArr[currentIndex]).toggleClass(settings.activeClass);
                 var beforeIndex = currentIndex - 1 < 0 ? sArrCount - 1 : currentIndex - 1;
                 $(sArr[beforeIndex]).toggleClass(settings.activeClass);
@@ -76,7 +75,6 @@
                             settings.finishCallback();
                             $this.trigger('finish-marquee-animation');
                         }, delayTime);
-                        return $this;
                     }
                 }
 
@@ -88,6 +86,8 @@
                 timer = setTimeout(callback, currentTime);
             }
             setTimeout(callback, currentTime);
+            $this.trigger('start-marquee-animation');
+            return $this;
         }
     };
     $.fn.marquee = function() {
