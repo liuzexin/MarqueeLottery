@@ -77,6 +77,7 @@ First of all,you should know that speed mode only support  one, which `ease-in-e
 `$('#id').marquee('start');` Start marquee right now.
 
 **0.1.5 New**
+
 You can use the following code to listen the `start-marquee-animation` or `finish-marquee-animation` event.
 `$('#id').on('start-marquee-animation')` or `$('#id').on('start-marquee-animation')`
 [CoderLiu](http://blog.liuzexin.top)
